@@ -218,6 +218,9 @@ main {
   .btn--new {
     top: 10rem;
   }
+  .btn--fold {
+  top: 46.1rem;
+}
   
 }
 .hidden{
