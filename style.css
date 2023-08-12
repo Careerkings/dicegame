@@ -1,7 +1,5 @@
 /*Career Kings styling for dice game*/
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +59,6 @@ main {
   color: #c7365f;
   margin-bottom: auto;
 }
-
 .player--active {
   background-color: green;
 }
@@ -138,7 +135,7 @@ main {
 .btn--roll {
   top: 39.3rem;
 }
-.btn--hold {
+.btn--fold {
   top: 46.1rem;
 }
 
@@ -168,7 +165,61 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
+@media (max-width: 700px) {
 
-.hidden {
+  .player {
+    flex: 15%;
+    padding: 4rem;
+  }
+  .name{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .score {
+    font-size: 5rem;
+    font-weight: 200;
+  }
+  .player--active .name{
+    font-weight: 100;
+  }
+  .player--active .score {
+    font-weight: 300;
+  }
+
+  .current {
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+  }
+  .current-label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .current-score {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.3rem 1.2rem;
+
+  }
+  .logo{
+    height: 4rem;
+    width: 4rem;
+    top: 1rem;
+  }
+  .btn--new {
+    top: 10rem;
+  }
+  
+}
+.hidden{
   display: none;
 }
