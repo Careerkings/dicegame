@@ -21,7 +21,47 @@ body {
   align-items: center;
   justify-content: center;
 }
+.instruct-container{
+  width: 100rem;
+  height: 60rem;
+  background-color: yellow;
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.instruct-heading{
+  color: rgb(15, 71, 15);
+  font-size: 4rem;
+  padding-bottom: 4rem;
+  text-transform: uppercase;
+}
+.instruct{
+  color: red;
+  font-size: 3rem;
+}
+.instructions{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 2rem;
+}
+.start-game{
+  font-size: 4rem;
+  padding: 2rem;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  border-radius: 20%;
+  text-decoration: none;
+  color: yellow;
 
+}
+.logo1{
+  height: 16rem;
+}
 main {
   position: relative;
   width: 100rem;
@@ -72,6 +112,7 @@ main {
 .player--active .current {
   opacity: 1;
 }
+
 
 .current {
   background-color: purple;
@@ -165,7 +206,22 @@ main {
   font-weight: 700;
   color: #c7365f;
 }
+
 @media (max-width: 700px) {
+ 
+  .instruct-heading{
+    font-size: 2rem;
+  }
+  .instruct{
+    font-size: 2rem;
+  }
+  .instructions{
+    font-size: 1.5rem;
+  }
+ 
+  .logo1{
+    height: 16rem;
+  }
 
   .player {
     flex: 15%;
@@ -226,3 +282,4 @@ main {
 .hidden{
   display: none;
 }
+
